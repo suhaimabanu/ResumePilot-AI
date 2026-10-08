@@ -1,0 +1,24 @@
+Senior Python Backend Engineer — Example Corp
+
+We are looking for a Senior Python Backend Engineer to design and build scalable REST APIs.
+
+Responsibilities:
+- Design, build and maintain REST APIs and microservices using Python and FastAPI
+- Deploy and operate services on Amazon Web Services using Docker and Kubernetes
+- Optimize PostgreSQL database performance and caching with Redis
+- Build CI/CD pipelines and infrastructure as code with Terraform
+- Mentor engineers and participate in code reviews
+- Collaborate with product teams in an Agile environment
+
+Requirements:
+- 5+ years of professional experience in backend development with Python
+- Strong experience with FastAPI or Django
+- Experience with PostgreSQL and Redis
+- Hands-on experience with AWS and Docker
+- Experience with Kubernetes and Terraform
+- Bachelor's degree in Computer Science or related field
+
+Nice to have:
+- AWS certification
+- Experience with Kafka
+- Experience with GraphQL

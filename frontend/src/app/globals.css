@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #faf8f5;
+  --surface: #ffffff;
+  --surface-2: #f4f1ec;
+  --ink: #1f1d1a;
+  --ink-2: #57524b;
+  --ink-3: #8a847b;
+  --line: #ebe6df;
+  --violet: #7c5cff;
+  --pink: #e85d9f;
+  --orange: #f28c38;
+  --good: #1f9d6b;
+  --warn: #c98a16;
+  --bad: #d64545;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-line: var(--line);
+  --color-violet: var(--violet);
+  --color-pink: var(--pink);
+  --color-orange: var(--orange);
+  --color-good: var(--good);
+  --color-warn: var(--warn);
+  --color-bad: var(--bad);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+.brand-gradient {
+  background-image: linear-gradient(120deg, var(--violet) 0%, var(--pink) 55%, var(--orange) 100%);
+}
+
+.brand-text {
+  background-image: linear-gradient(120deg, var(--violet) 0%, var(--pink) 55%, var(--orange) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  box-shadow: 0 1px 2px rgba(31, 29, 26, 0.04), 0 8px 24px -12px rgba(31, 29, 26, 0.08);
+}
+
+.glow {
+  position: absolute;
+  inset: -40% -10% auto -10%;
+  height: 520px;
+  background: radial-gradient(closest-side, rgba(124, 92, 255, 0.16), transparent),
+    radial-gradient(closest-side at 70% 40%, rgba(242, 140, 56, 0.12), transparent),
+    radial-gradient(closest-side at 30% 60%, rgba(232, 93, 159, 0.1), transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.diff-del {
+  background: rgba(214, 69, 69, 0.1);
+  color: #a23434;
+  text-decoration: line-through;
+  text-decoration-color: rgba(162, 52, 52, 0.5);
+  border-radius: 3px;
+}
+
+.diff-ins {
+  background: rgba(31, 157, 107, 0.12);
+  color: #146b49;
+  border-radius: 3px;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.pulse-dot {
+  animation: pulse-dot 1.2s ease-in-out infinite;
+}
+
+:focus-visible {
+  outline: 2px solid var(--violet);
+  outline-offset: 2px;
+}
